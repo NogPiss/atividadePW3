@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Input } from '@angular/core';
+import { Component/*, OnInit */} from '@angular/core';
 
 @Component({
   selector: 'app-imagem',
@@ -6,16 +7,19 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './imagem.component.html',
   styleUrl: './imagem.component.css'
 })
-export class ImagemComponent implements OnInit {
+export class ImagemComponent/* implements OnInit */{
 
   biscoitoaberto = "biscoito-aberto.png"
   biscoitofechado = "biscoito.png"
   currentImage: string = this.biscoitoaberto
-
+/*
   ngOnInit(){
     this.trocaImagem();
   }
+*/
+  @Input()quebrado : boolean = true;
 
+/*
   trocaImagem(){
     const ImagemAtual = localStorage.getItem('currentImage');
     if(ImagemAtual === this.biscoitoaberto){
@@ -26,7 +30,7 @@ export class ImagemComponent implements OnInit {
     }
 
     localStorage.setItem('currentImage', this.currentImage)
+
   }
-
-
+*/
 }
