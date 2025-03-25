@@ -1,0 +1,10 @@
+<div class = "container">
+  <div>
+    <img [src]="quebrado ? 'biscoito-aberto.png' : 'biscoito.png'" alt="biscoito">
+  </div>
+
+  <p [hidden] = "exibe">{{texto}}</p>
+
+  <button class="botao" (click)="quebrabiscoito()">Quebrar Biscoito!</button>
+  <button class="secundario" (click)="regenBiscoito()">Regenerar Biscoito</button>
+</div>

@@ -19,7 +19,7 @@ export class ImagemComponent/* implements OnInit */{
 */
   @Input()quebrado : boolean = true;
 
-/*
+
   trocaImagem(){
     const ImagemAtual = localStorage.getItem('currentImage');
     if(ImagemAtual === this.biscoitoaberto){
@@ -32,5 +32,5 @@ export class ImagemComponent/* implements OnInit */{
     localStorage.setItem('currentImage', this.currentImage)
 
   }
-*/
+
 }
